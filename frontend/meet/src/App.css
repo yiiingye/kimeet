@@ -3,6 +3,60 @@
 }
 
 @media screen and (max-width: 600px) {
-  .button{display: none;}
-  .sideCamera{display: none;}
+  .button {
+    display: none;
+  }
+
+  .sideCamera {
+    display: none;
+  }
 }
+
+.sideCamera:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.sideCameras {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 2px;
+  overflow-y: auto;
+}
+
+.sideCameras {
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.sideCameras::-webkit-scrollbar {
+  display: none;
+}
+
+.endCall, .chat {
+  width: 30%;
+  height: 80%;
+  margin: 2px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+.chat{
+  background-color: grey;
+}
+.chat:hover{
+  background-color: rgba(128, 128, 128, 0.729);
+}
+.endCall{
+  background-color:rgb(249, 130, 150);
+}
+.endCall:hover{
+  background-color: rgba(249, 130, 150, 0.653);
+}
+
