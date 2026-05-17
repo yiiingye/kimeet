@@ -7,3 +7,4 @@ build:
 	cp ../frontend/dist/assets/* static/assets
 	cp ../frontend/dist/index.html index.html
 	perl -pi -e 's|/assets/|/static/assets/|g' index.html
+	uv run main.py

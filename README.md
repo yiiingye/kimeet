@@ -1,7 +1,9 @@
 ## Cómo compilar el proyecto
 
 ```
-cd ./backend
+cd ./frontend
+bun install
+cd ../backend
 make
 
 uv run main.py
