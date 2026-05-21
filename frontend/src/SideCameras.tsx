@@ -4,8 +4,8 @@ export default function Camera() {
             autoPlay
             playsInline
             muted
-            style={{ transform: "scaleX(-1)", objectFit:"contain", height:"100x%", borderRadius:"5px"}}
-            id="remoteVideo"
+            style={{ transform: "scaleX(-1)", objectFit:"contain", height:"100%", borderRadius:"5px", margin:"5px"}}
+            id="localVideo"
         />
     );
 }

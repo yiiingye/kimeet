@@ -45,6 +45,11 @@ def existing_room(room):
     return send_file('index.html')
 
 
+@socketio.on("close")
+def close():
+    print("Closing connection")
+    
+
 @socketio.on("ready")
 def ready(data):
     print(f"Ready: {data}")

@@ -39,7 +39,8 @@
   display: none;
 }
 
-.endCall, .chat {
+.endCall,
+.mute {
   width: 30%;
   height: 80%;
   margin: 2px;
@@ -47,16 +48,19 @@
   border: none;
   border-radius: 5px;
 }
-.chat{
+
+.chat {
   background-color: grey;
 }
-.chat:hover{
+
+.chat:hover {
   background-color: rgba(128, 128, 128, 0.729);
 }
-.endCall{
-  background-color:rgb(249, 130, 150);
-}
-.endCall:hover{
-  background-color: rgba(249, 130, 150, 0.653);
+
+.endCall {
+  background-color: rgb(249, 130, 150);
 }
 
+.endCall:hover {
+  background-color: rgba(249, 130, 150, 0.653);
+}

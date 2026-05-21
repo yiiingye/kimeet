@@ -1,9 +1,10 @@
-export default function Buttons() { 
-    return(
+import { close } from "./Connection";
+
+export default function Buttons() {
+    return (
         <>
-        <button style={{width:"50px"}}>End</button>
-        <button style={{width:"50px"}}>Mute</button>
-        <button style={{width:"50px"}}>Quit Video</button>
+            <button className="endCall" style={{ width: "50px" }} onClick={() => close()}>End</button>
+            <button className="mute" style={{ width: "50px" }}>Mute</button>
         </>
     )
 }

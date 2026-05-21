@@ -37,6 +37,7 @@ export async function startCamera() {
     
     const localVideo = document.getElementById("localVideo");
     const remoteVideo = document.getElementById("remoteVideo");
+
     localStream = await navigator.mediaDevices.getUserMedia({
         video: true,
         audio: true
@@ -53,6 +54,20 @@ export async function startCamera() {
     socket.emit("ready", {room: room});
 }
 
+export async function close() {
+    
+    //if (localStream) {
+    //    localStream.getTracks().forEach(track => track.close());
+    //}
+
+    if (peerConnection) {
+        peerConnection.close();
+        peerConnection = null;
+        console.log("Closing connection");
+
+        socket.emit("close")
+    }
+}
 function createPeerConnection(remoteVideo, room) {
     peerConnection = new RTCPeerConnection(config);
 
